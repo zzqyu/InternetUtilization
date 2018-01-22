@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by wjdrb0626 (http://jsbin.com/jisegoq/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width">
+  <title>시간표</title>
+
+<style id="jsbin-css">
+td{width:150px;
+text-align:center;}
+th{width:150px;
+text-align:center;}
+/*css로는 스타일일 일괄적으로 정할 수 있다*/
+
+/*클래스 설정 시작은 .*/
+.sun{color:red;}
+.sat{color:blue;}
+
+#stit{font-size:24pt;}
+
+body{font-size:10pt;}
+
+table{
+  background:url("http://www.zuzunza.com/illust/data/1404/3067450509_bf4d3f4c_C7CFB4C3.png");
+}
+</style>
+</head>
+<body>
+  <!--border는 선 두께, align은 정렬-->
+  <table border=1 align="center">
+    
+    <tr>
+      <td colspan=8 id="stit"><ruby>시 간 표<rt>2017년도 2학기</rt></ruby></td>
+    </tr>
+    <tr>
+      <th class="tit">-</th>
+      <th class="sun">일</th>
+      <th class="mon">월</th>
+      <th class="tue">화</th>
+      <th class="wed">수</th>
+      <th class="thu">목</th>
+      <th class="fri">금</th>
+      <th class="sat">토</th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>1교시<rt>09:00~10:15</rt></ruby></th>
+      <th class="sun" rowspan=6 >짜파게티<br>요리사</th>
+      <th class="mon" rowspan=2>잠</th>
+      <th class="tue"rowspan=2>잠</th>
+      <th class="wed"rowspan=3>잠</th>
+      <th class="thu"rowspan=2>잠</th>
+      <th class="fri" rowspan=2><ruby>소실<rt>새빛301</rt></th>
+      <th class="sat" rowspan=6 >짜파게티<br>사는날</th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>2교시<rt>10:30~11:45</rt></ruby></th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>3교시<rt>12:00~13:15</rt></ruby></th>
+      <th class="mon"><ruby>시소<rt>참101</rt></ruby></th>
+      <th class="tue"><ruby>상상공학<rt>참B107</rt></ruby></th>
+      <th class="thu"><ruby>프언<rt>새빛102</rt></ruby></th>
+      <th class="fri" rowspan=4>놀자</th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>4교시<rt>13:30~14:45</rt></ruby></th>
+      <th class="mon"rowspan=3>놀자</th>
+      <th class="tue"><ruby>프언<rt>새빛102</rt></ruby></th>
+      <th class="wed"><ruby>시소<rt>참101</rt></ruby></th>
+      <th class="thu"><ruby>상상공학<rt>참B107</rt></ruby></th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>5교시<rt>15:00~16:15</rt></ruby></th>
+      <th class="tue"><ruby>자료구조<rt>새빛204</rt></ruby></th>
+      <th class="wed" rowspan=2 ><ruby>법과생활<rt>참B107</rt></ruby></th>
+      <th class="thu"><ruby>인터넷활용<rt>연201</rt></ruby></th>
+    </tr>
+    <tr>
+      <th class="tit"><ruby>6교시<rt>16:30~17:45</rt></ruby></th>
+      <th class="tue"><ruby>인터넷활용<rt>연201</rt></ruby></th>
+      <th class="thu"><ruby>자료구조<rt>새빛204</rt></th>
+    </tr>
+  </table>
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.0"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

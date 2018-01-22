@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by wjdrb0626 (http://jsbin.com/xohiyif/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width">
+  <title>youtube</title>
+  
+</head>
+<body>
+  image : http://i.ytimg.com/vi/1W3nTpoSmWs/vi/{0|1|2|3}.jpg<br>
+  {mq|hq|sd|maxres}default.jpg
+  <br> 
+   <img src="http://i.ytimg.com/vi/1W3nTpoSmWs/sddefault.jpg" />
+  <hr>
+  video : https://www.ytapi.com?format=direct&amp;itag=22&amp;vid=pRtTK-6PJOw<br>
+  <button onclick="pp(v)">play</button>
+  <video id="v" width=100% src="https://www.ytapi.com?format=direct&itag=22&vid=pRtTK-6PJOw" controls allowfullscreen ></video> 
+  <hr>
+  iframe :
+  https://www.youtube.com/embed/pRtTK-6PJOw<br>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/pRtTK-6PJOw" frameborder="0" gesture="media" allowfullscreen></iframe>
+<script>
+function pp(v){
+  v=v.paused?v.play():v.pause();
+}
+</script>
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.2"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

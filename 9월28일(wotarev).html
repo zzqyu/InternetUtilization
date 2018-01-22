@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by wjdrb0626 (http://jsbin.com/wotarev/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+
+<style id="jsbin-css">
+*{margin:0;padding:0;}
+#ifr{border:0;width:100vw;height:56.2vw;}
+</style>
+</head>
+<body>
+  <select id="opt" >
+    <option value="노래방 " selected />노래방
+    <option value="LIVE " />LIVE
+    <option value="MV " />MV
+    <option value="직캠 " />직캠
+  </select>
+  
+  <input id="song" placeholder="가수 or 제목을 입력하세요" />
+  <button onclick="play(opt.value,song.value)">시작</button><br>
+  <iframe id="ifr" width=100% height=100% allowfullscreen > </iframe>
+<script>
+function play(o,s){
+  var temp="";
+  temp="https://www.youtube.com/embed?autoplay=1&rel=0&listType=search&list="+o+s;
+  ifr.src=temp;
+}
+</script>
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.0"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

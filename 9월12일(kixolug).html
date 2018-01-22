@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by wjdrb0626 (http://jsbin.com/kixolug/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <!--
+  target="_blank" 새창에 띄우기  
+  target="_self" 현창에 띄우기
+  target="아무 string" 아무 string라는 이름 창에 띄우기()
+  a는 앵커
+  한 속성(문장)에 띄어쓰기 금지
+  -->
+  <a href ="http://www.kw.ac.kr" target="new"> 
+    광운대학교
+  </a><br>
+  <a href ="http://www.kw.ac.kr" target="new"> 
+    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Kwangwoonuniv.jpg/270px-Kwangwoonuniv.jpg"/>
+  </a><br><hr>
+  
+  <select onchange="paths(this.value)">
+    <option value=0 /> 사이트 선택
+    <option value=1 /> 네이버
+    <option value=2 /> 다음
+    <option value=3 /> 네이트
+    <option value=4 /> 구글
+    <option value=5 /> 유튜브
+    <option value=6 /> 유튜브2
+  </select>
+  
+  <input id="query" />
+  <!--ondblclick 더블클릭 이벤트
+      onclick 클릭 이벤트-->
+  <button onclick="search(query.value)">검색</button><br><hr>
+  
+  출발<input id="s" />
+  도착<input id="f" />
+  <button onclick="load(s.value, f.value)">길찾기 </button>
+  
+  
+<script>
+var site="";
+var path=[];
+path[1]="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=";
+path[2]="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=";
+path[3]="https://search.daum.net/nate?thr=sbma&w=tot&q=";
+path[4]="https://www.google.co.kr/search?q=";
+path[5]="https://www.youtube.com/results?search_query=";
+path[6]="https://www.youtube.com/embed?autoplay=1&listType=search&list=";
+
+
+function paths(s){
+  site=path[s];
+  //alert(site);
+}
+
+function search(q){
+  location.href=site+q;
+  //alert(q);
+}
+
+function load(s,f){
+  location.href="https://www.google.com/maps/dir/"+s+"/"+f;
+}
+</script>
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.0"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
